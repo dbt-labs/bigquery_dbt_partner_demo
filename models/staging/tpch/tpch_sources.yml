@@ -166,3 +166,13 @@ sources:
           - name: s_phone
           - name: s_acctbal
           - name: s_comment
+
+
+  - name: test
+    schema: dbt_bbirstock
+    tables:
+      - name: test
+        columns:
+          - name: id
+            tests:
+              - unique
