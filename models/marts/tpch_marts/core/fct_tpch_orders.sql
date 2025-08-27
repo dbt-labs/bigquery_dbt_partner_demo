@@ -12,7 +12,7 @@ with orders as (
 ),
 order_item as (
     
-    select * from {{ ref('order_items') }}
+    select * from {{ ref('tpch_order_items') }}
 
 ),
 order_item_summary as (
